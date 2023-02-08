@@ -155,4 +155,8 @@ header h1{
   font-weight: 500;
   font-size: 20px;
 }
+ul {
+  width: 700px;
+  background-color: rgb(161, 161, 161);
+}
 /* end main styles */
