@@ -1,14 +1,30 @@
-const myForm= document.querySelector('#my-form');
-const tekst= document.querySelector('#txtbox');
-const tasks= document.querySelector('#tasks');
+const input = document.getElementById('input');
+const button = document.getElementById('button');
+const taskList = document.getElementById('taskList');
 
-myForm.addEventListener('submit', onSubmit);
-function onSubmit(e){
-    e.preventDefault();
-    if(tekst.value !== ''){
-    const li=document.createElement('li');
-    li.appendChild(document.createTextNode(`${tekst.value}`));
-    tasks.appendChild(li);
-    tekst.value='';
+function addTask(value){
+    const task = document.createElement('li');
+    task.innerText = value;
+    taskList.appendChild(task);
 }
+
+function submitTask(value){
+    if(!value) return;
+    if (!value.trim()) return;
+
+    addTask(value);
+    input.value='';
 }
+
+input.addEventListener('keyup', function({ key }){
+    if (key !== 'Enter') return;
+    event.preventDefault;
+
+    const { value } = input;
+    submitTask(value);
+});
+
+button.addEventListener('click', function(){
+    const { value } = input;
+    submitTask(value);
+});

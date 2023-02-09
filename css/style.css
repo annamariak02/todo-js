@@ -1,4 +1,4 @@
-/* css reset */
+/*css reset*/
 /* Box sizing rules */
 *,
 *::before,
@@ -73,14 +73,18 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* end css reset */
 
-/* typography */
+/*typography*/
 html {font-size: 100%;} /*16px*/
 
 body {
-  background: rgb(228, 223, 223);
-  font-family: 'Poppins', sans-serif;
+    background-color: #e1e1e1;
+opacity: 1;
+background-image:  linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%), linear-gradient(315deg, #ffffff 25%, #e1e1e1 25%);
+background-position:  7px 0, 7px 0, 0 0, 0 0;
+background-size: 14px 14px;
+background-repeat: repeat;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
   line-height: 1.75;
   color: #000000;
@@ -90,73 +94,72 @@ p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
   line-height: 1.3;
 }
 
 h1 {
   margin-top: 0;
-  font-size: 4.209rem;
+  font-size: 5.653rem;
 }
 
-h2 {font-size: 3.157rem;}
+h2 {font-size: 3.998rem;}
 
-h3 {font-size: 2.369rem;}
+h3 {font-size: 2.827rem;}
 
-h4 {font-size: 1.777rem;}
+h4 {font-size: 1.999rem;}
 
-h5 {font-size: 1.333rem;}
+h5 {font-size: 1.414rem;}
 
-small, .text_small {font-size: 0.75rem;}
+small, .text_small {font-size: 0.707rem;}
 /* end typography */
-
-/* global styles */
-.d-flex{
-  display: flex;
+/* main styles */
+h1 {
+    font-size: 100px;
+    text-transform: uppercase;
 }
-.x-c{
-  justify-content: center;
-}
-.y-c{
-  align-items: center;
-}
-#btn{
-  border: 2px solid rgb(82, 82, 82);
-  border-radius: 2em;
-  padding: 1em 2em;
-  background-color: #f2eeee;
-  box-shadow: 5px 5px 8px rgb(175, 175, 180);
-
-}
-/* end global styles */
-
-/* main styles  */
 header{
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
 }
-header h1{
-  font-weight: 900;
-  font-size: 100px;
-  text-transform: uppercase;
-  color: rgb(36, 199, 199);
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#txtbox{
-  width: 500px;
-  border: 2px solid rgb(82, 82, 82);
-  border-radius: 2em;
-  padding: 1em 2em;
-  box-shadow: 5px 5px 8px rgb(175, 175, 180);
-  margin-bottom: 20px;
-  background-color: #f2eeee;
+#input{
+    width: 350px;
+    height: 35px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 1em;
+    padding-left: 1em;
+    box-shadow: 5px 5px 8px rgb(175, 175, 180);
+    font-size: 20px;
 }
 ::placeholder{
-  color: #ccc;
-  font-weight: 500;
-  font-size: 20px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+}
+#button{
+    background-color: #dadada;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 1em;
+    box-shadow: 5px 5px 8px rgb(175, 175, 180);
+    padding: 0em 1em;
+    height: 35px;
+    font-size: 20px;
+
 }
 ul {
-  width: 700px;
-  background-color: rgb(161, 161, 161);
+    list-style-type: none;
+    width: 500px;
+    padding-left: 1em;
+    background-color: #e4e4e4;
+    font-size: 24px;
+    border-radius: 1em;
+    box-shadow: 5px 5px 8px rgb(175, 175, 180);
+
 }
 /* end main styles */
